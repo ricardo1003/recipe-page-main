@@ -115,10 +115,28 @@ h2{
     color: hsl(30, 10%, 34%);
     font-weight: normal;
 }
-
-
-
-
-
+.nutrition table{
+    width: 100%;
+}
+.nutrition table tr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+.nutrition table tr:last-child{
+    border-bottom: none;
+}
+.nutrition table tr th, td{
+    display: inline-block;
+}
+.nutrition table tr th{
+    text-align: start;
+    font-weight: 400;
+}
+.nutrition table tr td{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
