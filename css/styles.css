@@ -5,25 +5,49 @@ body{
 main{
     margin: 4rem auto;
     background-color: hsl(0, 0%, 100%);
-    max-width: 30rem;
+    max-width: 34rem;
     padding: 2rem;
+    border-radius: 1rem;
+    font-family: "outfit";
+    color: hsl(30, 10%, 34%);
+
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+figure{
+    max-width: 100%;
+    margin: 0;
 }
 img{
-    max-width: 100%;
+    max-width: inherit;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
-main{
-    border-radius: 1rem;
-    font-family: "outfit";
-    color: hsl(30, 10%, 34%);
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+
+@media (max-width:508px){
+    figure{
+        height: 320px;
+    }
+    img{
+        top: 0;
+        left: 0;
+        height: 340px;
+        position: absolute;
+        max-width: 100%;    
+    }
+    main{
+        margin: 0;
+        border-radius:0px;
+        -webkit-border-radius:0px;
+        -moz-border-radius:0px;
+        -ms-border-radius:0px;
+        -o-border-radius:0px;
+}
 }
 h1, h2{
     font-family: "Young Serif";
